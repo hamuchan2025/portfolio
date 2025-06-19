@@ -1,118 +1,132 @@
 <!DOCTYPE html>
-  <html lang="ja">
+<html lang="ja">
 
-  <head>
-    <meta charset="utf-8">
-    <title>新校舎について 【コワーキングスペース】</title>
-    <link rel="stylesheet" href="css/style.css">
-  </link>
+<head>
+  <meta charset="utf-8">
+  <title>新校舎について 【コワーキングスペース】</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name= "viewport" content="width =device-width, initial-scale=1">
+  <script src="js/index.js"></script>
+</head>
 
-  </head>
-
-  <body>
- <header>
-    <h1 class="title">新校舎紹介（Co-workingSpace）</h1>
- </header>
-
+<body>
+   <header>
+         <h1 class="header_logo">レンタルスペースのご案内！！</h1>
+        </header>
+<main>
+  <section class="title">
+  <h1>新校舎紹介<br class="sp_only">（Co-workingSpace）</h1>
   <div class="juku">
-    <a href="https://tetsutei19.com/"><img src="./img/S__56442882.jpg" alt="新校舎" width="1640px" height="480px" > </a>
-   
- </div>
-
- <main>
-
-<h2  class="base3">Room【A】・Room【B】</h3>
-
- <ul>
-  <li>
-    <p><a href="#"><img src="./img/RoomA.jpg" alt="RoomA"  width="300px" height="300px"/></a></p>
-  </li>
-
-  <br>
-
-  <li>
-    <p><a href="#"><img src="./img/RoomB.jpg" alt="RoomA" width="300px" height="300px"/></a></p>
-  </li>
- </ul>
+  <a href="https://tetsutei19.com/"><img src="./img/S__56442882.jpg" alt="新校舎" width="1640px" height="480px"> </a>
+  </div>
+  </section>
 
 
- <h2 class="hyou">1週間の利用可能時間帯（Available）</h2><br>
+  <section class="base3">
+  <h2>Room【A】・Room【B】</h2>
 
-    <table border = "10">
-    <tr>
-      <th>時間（平日）</th>
-      <th>ステータス</th>
-      <th>RoomA</th>
-      <th>RoomB</th>
-
-    </tr>
-    
-    <tr>
-      <th>9:00~12:00</th>
-      <th>利用不可</th>
-      <th>-</th>
-      <th>-</th>
-    </tr>
-
-    <tr>
-      <td>13:00~18:00</td>
-      <td>利用可能</td>
-      <th>500円</th>
-      <th>500円</th>
-    </tr>
-
-    <tr>
-      <td>19:00~22:00</td>
-      <td>利用可能</td>
-      <th>800円</th>
-      <th>500円</th>
-    </tr>
+      <ul>
+        <li>
+        <div class="base3gazou"><img src="./img/RoomA.jpg" alt="RoomA" width="300px" height="300px" /></div>
+        </li>
+       
+        <li>
+        <div class="base3gazou"><img src="./img/RoomB.jpg" alt="RoomA" width="300px" height="300px" /></div>
+        </li>      
      
-  </table>
+        <li>
+        <div class="base3gazou"><img src="./img/RoomA.jpg" alt="RoomA" width="300px" height="300px" /></div>
+        </li>
+  
+        <li>
+        <div class="base3gazou"><img src="./img/RoomB.jpg" alt="RoomA" width="300px" height="300px" /></div>
+        </li>
+      </ul>
 
-  <br>
-
-   <table border = "10">
-    <tr>
-      <th>時間（土日祝日）</th>
-      <th>ステータス</th>
-      <th>RoomA</th>
-      <th>RoomB</th>
-    </tr>
-    
-    <tr>
-      <th>9:00~12:00</th>
-      <th>利用可能</th>
-      <th>1,000円</th>
-      <th>1,200円</th>
-    </tr>
-
-    <tr>
-      <td>13:00~18:00</td>
-      <td>利用可能</td>
-      <th>1,600円</th>
-      <th>1,800円</th>
-    </tr>
-
-    <tr>
-      <td>19:00~22:00</td>
-      <td>利用不可</td>
-      <th>-</th>
-      <th>-</th>
-    </tr>
-     
-  </table>  
+   </section>
 
 
+  <section class="hyou">
+    <h3>1週間の利用可能時間帯（Available）</h3><br>
+      <ul>
+       <li>
+       <table border="10" class="first-table">
+        <tr>
+          <th>時間（平日）</th>
+          <th>ステータス</th>
+          <th>RoomA</th>
+          <th>RoomB</th>
+        </tr>
 
-</main>
+        <tr>
+          <th>9:00~12:00</th>
+          <th>利用不可</th>
+          <th>-</th>
+          <th>-</th>
+        </tr>
 
+        <tr>
+          <td>13:00~18:00</td>
+          <td>利用可能</td>
+          <th>500円 <button onclick="addToCart(500, 'RoomA平日13:00~18:00')">カートに入れる</button></th> 
+          <th>500円 <button onclick="addToCart(500, 'RoomB平日13:00~18:00')">カートに入れる</button></th>
+        </tr>
 
+        <tr>
+          <td>19:00~22:00</td>
+          <td>利用可能</td>
+          <th>800円 <button onclick="addToCart(800, 'RoomA平日19:00~22:00')">カートに入れる</button></th>
+          <th>500円 <button onclick="addToCart(800, 'RoomB平日19:00~22:00')">カートに入れる</button></th>
+        </tr>
+      </table>
+      </li>
 
-<footer class="footer">
+      <br>
 
-</footer>
-    
-  </body>
+      <li>
+      <table border="10"  class="second-table">
+        <tr>
+          <th>時間（土日祝日）</th>
+          <th>ステータス</th>
+          <th>RoomA</th>
+          <th>RoomB</th>
+        </tr>
 
+        <tr>
+          <th>9:00~12:00</th>
+          <th>利用可能</th>
+          <th>1,000円 <button onclick="addToCart(1000, 'RoomA土日祝日9:00~12:00')">カートに入れる</button></th>
+          <th>1,200円 <button onclick="addToCart(1200, 'RoomB土日祝日9:00~12:00')">カートに入れる</button></th>
+        </tr>
+
+        <tr>
+          <th>13:00~18:00</th>
+          <th>利用可能</th>
+          <th>1,600円 <button onclick="addToCart(1600, 'RoomA土日祝日13:00~18:00')">カートに入れる</button></th>
+          <th>1,800円 <button onclick="addToCart(1800, 'RoomB土日祝日13:00~18:00')">カートに入れる</button></th>
+        </tr>
+
+        <tr>
+          <th>19:00~22:00</th>
+          <th>利用不可</th>
+          <th>-</th>
+          <th>-</th>
+        </tr>
+
+      </table>
+      </li>
+     </ul>
+   </section>
+  </main>
+
+  <footer class="footer">
+  <div class=" footer_logo">Co-workingSpace</div>
+  <div class="footer_copyright">©2024 Co-workingSpace</div>
+  </footer>
+  
+  <div class="fixed_cart">
+        <p>カート合計：￥<span id="total">0</span></p>
+        <ul id="cart-items"></ul>
+  </div>
+</body>
 </html>
