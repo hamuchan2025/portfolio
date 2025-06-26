@@ -67,7 +67,6 @@ padding-left: 5px;
 }
 
 
-
 .hyou ul{
 list-style: none;
 display: flex;
@@ -164,10 +163,9 @@ background-color:#847C7F;
 text-align: center;
 }
 
-
-
 .base3 li{
 gap: 1px;
+width: 15%; 
 }
 
 .base3gazou{
