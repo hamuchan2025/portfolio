@@ -28,7 +28,7 @@ img{
   text-align: center;
 }
 
-.juku img{ 
+.juku img{
   width: 100%;
   height: 480px;
   object-fit: cover;
@@ -60,16 +60,18 @@ text-align: center;
 .base3 ul{
 list-style: none;
 display: flex;
+/* flex-wrap というのを使用すると長さが100%を超えた場合に折り返しするようになります。 */
+/* 2列にするには、liの幅をそれぞれ50%に設定すれば、50% + 50%で100%になるので、次の列に移動するようになります。 */
 align-items: left;
 justify-content: left;
 gap: 100px;
 padding-left: 5px;
 }
 
-
 .hyou ul{
 list-style: none;
 display: flex;
+/* 表もスマホで見たときに横長になっているので、flex-wrapを使うと良い感じになるかと思います。 */
 align-items: left;
 justify-content: left;
 gap: 10px;
@@ -131,6 +133,8 @@ padding-left: 5px;
     }
 
 .title h1 {
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
   width: 600px;
   font-size: 2.5rem;
   color: white;
@@ -142,7 +146,9 @@ padding-left: 5px;
   text-align: center;
 }
 
-.juku{ 
+.juku{
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
   width: 670px;
   height: 480px;
   object-fit: cover;
@@ -152,6 +158,8 @@ padding-left: 5px;
 
 
 .base3 h2 {
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
 width: 600px;
 font-family:'Times New Roman', Times, serif;
 margin-bottom:8px;
@@ -165,7 +173,7 @@ text-align: center;
 
 .base3 li{
 gap: 1px;
-width: 15%; 
+width: 15%;
 }
 
 .base3gazou{
@@ -174,6 +182,8 @@ width: 15%;
 
 
 .hyou h3{
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
 width: 600px;
 font-family:'Times New Roman', Times, serif;
 margin-bottom: 8px;
