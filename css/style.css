@@ -133,6 +133,8 @@ padding-left: 5px;
     }
 
 .title h1 {
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
   width: 600px;
   font-size: 2.5rem;
   color: white;
@@ -145,6 +147,8 @@ padding-left: 5px;
 }
 
 .juku{
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
   width: 670px;
   height: 480px;
   object-fit: cover;
@@ -154,6 +158,8 @@ padding-left: 5px;
 
 
 .base3 h2 {
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
 width: 600px;
 font-family:'Times New Roman', Times, serif;
 margin-bottom:8px;
@@ -176,6 +182,8 @@ width: 15%;
 
 
 .hyou h3{
+  /* スマホでwidth指定すると、375pxのデバイスなのに600px分の横幅で表示されたりするので、
+  min-widthで調整するのが良いです。 その場合も600ではなく標準で使われるデバイスで小さいサイズの375にしておくと良いかと思います。 */
 width: 600px;
 font-family:'Times New Roman', Times, serif;
 margin-bottom: 8px;
