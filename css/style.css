@@ -17,8 +17,9 @@ img{
 }
 
 
+
 .title h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: white;
   background-color: #847C7F;
   padding: 16px 20px;
@@ -78,10 +79,16 @@ padding-left: 5px;
 
 .first-table{
   margin-bottom: 0px;
+  width: 100%;
+  table-layout: fixed;  
+  font-size: 0.8rem;
 }
 
 .second-table{
   margin-bottom: 200px;
+  width: 100%;
+  table-layout: fixed;  
+  font-size: 0.8rem;
 }
 
 .fixed_cart{
@@ -122,39 +129,32 @@ padding-left: 5px;
 
 
 
+@media screen and (max-width: 678px){
+  .title h1 {
+    width: 90%;
+    font-size: 2.5rem;
+    color:white;
+    background-color: #847C7F;
+    padding: 16px 20px;
+    margin: 0;
+    letter-spacing: 0.15rem;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+  }
 
-
-
-@media screen and (max-width: 375px){
-.header_logo{
-    font-size: 1.4rem;
-    }
-
-.title h1 {
-  width: 600px;
-  font-size: 2.5rem;
-  color: white;
-  background-color: #847C7F;
-  padding: 16px 20px;
-  margin: 0;
-  letter-spacing: 0.15rem;
-  font-family: 'Times New Roman', serif;
-  text-align: center;
-}
 
 .juku{ 
-  width: 670px;
+  width: 100%;
   height: 480px;
   object-fit: cover;
-
 }
 
 
 
 .base3 h2 {
-width: 600px;
+width: 90%;
 font-family:'Times New Roman', Times, serif;
-margin-bottom:8px;
+margin-bottom:1px;
 
 font-size: 2.0rem;
 letter-spacing: 0.2rem;
@@ -163,13 +163,25 @@ background-color:#847C7F;
 text-align: center;
 }
 
-.base3 li{
-gap: 1px;
-width: 15%; 
+.base3 ul{
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  padding: 0;
 }
 
-.base3gazou{
- width: 115px;
+.base3 li{
+gap: 1px;
+width: 45%; 
+}
+
+
+
+.base3gazou img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
 }
 
 
@@ -197,6 +209,7 @@ padding-left: 5px;
 
 .hyou li{
 gap: 5px;
+;
 }
 
 .first-table{
@@ -244,7 +257,8 @@ margin-bottom: 1px;
 }
 
 
-}
+
 .sp_only{
     display: block;
+}
 }
